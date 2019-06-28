@@ -1,0 +1,6 @@
+Flask
+gunicorn
+httplib2
+requests
+ginsim
+nltk
