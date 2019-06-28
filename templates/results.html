@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="a.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <title>Score Card</title>
+</head>
+
+<body>
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <div class="jumbotron">
+
+
+    <h1 class="text-center">Here is your score card</h1>
+    <br><br>
+    <table class="table text-center">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">Question #</th>
+          <th scope="col">Score (in %)</th>
+        </tr>
+      </thead>
+      <tbody>
+      <tbody>
+        {% for i in range(1,6) %}
+        <tr>
+          <th scope="row">{{ i }}</th>
+          <td>{{ score[i] }}</td>
+        </tr>
+        {% endfor %}
+        <tr>
+        <th scope="row">Average Score</th>
+          <td>{{ avg_score }}</td>
+        </tr>
+      </tbody>
+      </tbody>
+    </table>
+  </div>
+</body>
+
+</html>

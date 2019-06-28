@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <title>Test</title>
+</head>
+
+<body>
+
+  <h1 class="text-center alert alert-info">Automated Evaluation of Answers using ML</h1>
+  <br>
+  <div class="text-center">
+    <h2 class="alert alert-danger">Instructions</h2>
+    <h4 class="alert alert-dark">Read question carefully before answering.<br>All questions are compulsory and have equal weightage.</h4>
+  </div>
+
+  <br><br>
+  <br><br>
+  <form class="text-center form-group jumbotron-fluid" method="POST" id="answer" action="/submit">
+
+    <h1 class="text-center alert alert-success">Q) {{ question_text[0] }}</h1>
+    <textarea type="text" class="form-control text-center " id="q1" rows="4" name="q1" placeholder="Enter your answer here"></textarea>
+    <br>
+
+    <h1 class="text-center alert alert-success">Q) {{ question_text[1] }}</h1>
+    <textarea type="text" class="form-control text-center" id="q2" rows="4" name="q2" placeholder="Enter your answer here"></textarea>
+    <br>
+
+    <h1 class="text-center alert alert-success">Q) {{ question_text[2] }}</h1>
+    <textarea type="text" class="form-control text-center" id="q3" rows="4" name="q3" placeholder="Enter your answer here"></textarea>
+    <br>
+
+    <h1 class="text-center alert alert-success">Q) {{ question_text[3] }}</h1>
+    <textarea type="text" class="form-control text-center" id="q4" rows="4" name="q4" placeholder="Enter your answer here"></textarea>
+    <br>
+
+    <h1 class="text-center alert alert-success">Q) {{ question_text[4] }}</h1>
+    <textarea type="text" class="form-control text-center" id="q5" rows="4" name="q5" placeholder="Enter your answer here"></textarea>
+
+    <br><br>
+    <input class="btn btn-primary btn-lg" type="submit" value="Submit Answers">
+
+  </form>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>
